@@ -1,8 +1,8 @@
 # Sentiment Analysis with Neural Models
 
 This repository contains a jupyter notebook which uses various neural models to perform sentence representation and sentiment analysis on the dataset of the Stanford Sentiment Treebank (SST) 
-The models included are:
 
+## Models
 - Bag-of-words (cbow)
 - Continuous bag-of-words (CBOW)
 - Deep continuous bag-of-words (Deep CBOW)
@@ -10,8 +10,7 @@ The models included are:
 - Binary Tree-LSTM
 - Child-sum Tree-LSTM
 
-We also compare variants of the LSTM, including:
-
+### LSTM variants
 - vanilla LSTM
 - No input gate (NIG) LSTM
 - No output gate (NOG) LSTM
@@ -20,6 +19,8 @@ We also compare variants of the LSTM, including:
 - No output activation (NOAF) LSTM
 - No peephole (NP) LSTM
 - Coupled input and forget (CIFG) LSTM
+
+## Methodology
 
 The models are evaluated based on accuracy. We also evaluate separately on long and short sentences for each model. We also evaluate performance on all subtrees of the original sentence dataset for each model. We use Word2Vec for pretrained embeddings.
 
